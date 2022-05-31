@@ -8,6 +8,9 @@ export default function Home({ isConnected }) {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <main>
+        <h1>Hello There</h1>
+      </main>
     </div>
   );
 }
