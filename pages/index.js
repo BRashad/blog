@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Header from "./header";
+import Main from "./main";
 import clientPromise from "../lib/mongodb";
 
 export default function Home({ isConnected }) {
@@ -8,9 +10,8 @@ export default function Home({ isConnected }) {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <h1>Hello There</h1>
-      </main>
+      <Header />
+      <Main />
     </div>
   );
 }

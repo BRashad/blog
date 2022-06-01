@@ -1,0 +1,58 @@
+/*********** GLOBAL ***********/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  content: "";
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+/*********** NAVBAR ***********/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em;
+  padding-top: 2em;
+  border: 1px solid black;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.menuandtools {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  margin-right: 3em;
+}
+
+.subitems {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-right: 2em;
+}
+
+/*********** POSTCARD ***********/
