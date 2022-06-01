@@ -55,4 +55,19 @@ body {
   margin-right: 2em;
 }
 
+/*********** MAIN ***********/
+
+.main {
+  display: flex;
+  margin: 3em;
+}
+
+/*********** CATEGORIES ***********/
+.categories {
+  width: 35%;
+}
 /*********** POSTCARD ***********/
+
+.postcard {
+  width: 65%;
+}
