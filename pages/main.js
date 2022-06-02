@@ -5,8 +5,8 @@ import Categries from "../components/Categries";
 const Main = () => {
   return (
     <main className="main">
-      <PostCard style={{ width: "70%" }} />
-      <Categries style={{ width: "30%" }} />
+      <PostCard />
+      <Categries />
     </main>
   );
 };

@@ -5,7 +5,7 @@ import CloseIcon from "../assets/navmenu/x.png";
 
 const NavBar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [screenWidth, setScreenWidth] = useState();
+  const [screenWidth, setScreenWidth] = useState(typeof window !== "undefined");
 
   const navmenu = ["HOME", "POSTS", "STUFF", "ABOUT"];
 
