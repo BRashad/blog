@@ -2,33 +2,20 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import MenuIcon from "../assets/navmenu/menuicon.png";
 import CloseIcon from "../assets/navmenu/x.png";
+import WindowDimensions from "../helpers/WindowsDimensions";
 
 const NavBar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [screenWidth, setScreenWidth] = useState(typeof window !== "undefined");
-
   const navmenu = ["HOME", "POSTS", "STUFF", "ABOUT"];
 
   const toggleNav = () => {
     setToggleMenu(!toggleMenu);
   };
 
-  useEffect(() => {
-    const changeWidth = () => {
-      setScreenWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", changeWidth);
-
-    return () => {
-      window.removeEventListener("resize", changeWidth);
-    };
-  }, []);
-
   return (
     <header className="header">
       <span className="logo">Rashad Bayram</span>
-      {(toggleMenu || screenWidth > 768) && (
+      {(toggleMenu || WindowDimensions > 768) && (
         <nav className="menu">
           {navmenu.map((menuitem, key) => (
             <span key={key}>
