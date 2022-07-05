@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from "react";
-import Image from "next/image";
+import React, { useState } from "react";
 import MenuIcon from "../assets/navmenu/menuicon.png";
 import CloseIcon from "../assets/navmenu/x.png";
-import WindowDimensions from "../helpers/WindowsDimensions";
+
+import UseWindowDimensions from "../helpers/useWindowDimensions";
 
 const NavBar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const navmenu = ["HOME", "POSTS", "STUFF", "ABOUT"];
+  const { height, width } = UseWindowDimensions();
 
   const toggleNav = () => {
     setToggleMenu(!toggleMenu);
@@ -15,7 +16,7 @@ const NavBar = () => {
   return (
     <header className="header">
       <span className="logo">Rashad Bayram</span>
-      {(toggleMenu || WindowDimensions > 768) && (
+      {(toggleMenu || height * width > 768) && (
         <nav className="menu">
           {navmenu.map((menuitem, key) => (
             <span key={key}>
@@ -29,9 +30,9 @@ const NavBar = () => {
       <span onClick={toggleNav} className="btn menuicon">
         <a href="#">
           {!toggleMenu ? (
-            <Image src={MenuIcon} alt="menuicon" width={50} height={50} />
+            <img src={MenuIcon} alt="menuicon" width={50} height={50} />
           ) : (
-            <Image src={CloseIcon} alt="menuicon" width={50} height={50} />
+            <img src={CloseIcon} alt="menuicon" width={50} height={50} />
           )}
         </a>
       </span>
