@@ -1,5 +1,7 @@
 import React from "react";
 import { NavBar } from "./components";
+import Main from "./pages/Main";
+import Header from "./components/Header";
 
 import "./App.css";
 
@@ -9,6 +11,8 @@ function App() {
       <header className="App-header">
         <NavBar />
       </header>
+      <Header />
+      <Main />
     </div>
   );
 }
