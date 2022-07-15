@@ -4,7 +4,7 @@ export default function NavBar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-around border-b border-gray-400 py-8">
+    <div className="flex items-center justify-around py-8">
       <a href="/">
         <span>Rashad Bayram</span>
       </a>
