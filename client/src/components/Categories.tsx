@@ -30,7 +30,7 @@ const Categories = () => {
   ];
   return (
     <section className="">
-      <h2 className="p-6">CATEGORIES</h2>
+      <h2 className="p-6 ml-5 text-left">CATEGORIES</h2>
       <div className="flex flex-row flex-wrap max-w-sm pt-8">
         {categories.map((category: Category) => (
           <a
