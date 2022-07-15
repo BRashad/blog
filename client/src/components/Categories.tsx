@@ -29,9 +29,9 @@ const Categories = () => {
     },
   ];
   return (
-    <div>
-      <h2>Categories</h2>
-      <div className="flex flex-row">
+    <section className="">
+      <h2 className="p-6">CATEGORIES</h2>
+      <div className="flex flex-row flex-wrap max-w-sm pt-8">
         {categories.map((category: Category) => (
           <a
             key={category.id}
@@ -42,7 +42,7 @@ const Categories = () => {
           </a>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
