@@ -5,8 +5,8 @@ import Recent from "../components/Recent";
 
 const Main = () => {
   return (
-    <div className="flex flex-row justify-center h-screen basis">
-      <main className="basis-2/4 flex  justify-center">
+    <div className="flex justify-center basis">
+      <main className="basis-2/4 flex justify-center">
         <Recent />
       </main>
       <aside className="basis-1/4 flex flex-col">
