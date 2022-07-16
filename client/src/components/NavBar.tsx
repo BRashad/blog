@@ -1,5 +1,5 @@
 import { useState } from "react";
-import AppRouter from "../AppRouter";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -9,7 +9,6 @@ export default function NavBar() {
       <a href="/">
         <span>Rashad Bayram</span>
       </a>
-
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
           <div
@@ -41,34 +40,33 @@ export default function NavBar() {
             </div>
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/home">HOME</a>
+                <Link to="/home">HOME</Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="http://localhost:3000/post">POST</a>
+                <Link to="/post">POST</Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/about">ABOUT</a>
+                <Link to="/about">ABOUT</Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/contact">CONTACT</a>
+                <Link to="/contact">CONTACT</Link>
               </li>
-              <AppRouter />
             </ul>
           </div>
         </section>
 
         <ul className="DESKhrefP-MENU hidden space-x-8 lg:flex">
           <li>
-            <a href="/home">HOME</a>
+            <Link to="/home">HOME</Link>
           </li>
           <li>
-            <a href="http://localhost:3000/post">POST</a>
+            <Link to="/post">POST</Link>
           </li>
           <li>
-            <a href="/about">ABOUT</a>
+            <Link to="/about">ABOUT</Link>
           </li>
           <li>
-            <a href="/contact">CONTACT</a>
+            <Link to="/contact">CONTACT</Link>
           </li>
         </ul>
       </nav>

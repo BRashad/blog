@@ -1,20 +1,30 @@
 import React from "react";
-import { NavBar } from "./components";
-import Main from "./pages/Main";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+
+import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-import "./App.css";
+import Home from "../src/pages/Main";
+import Post from "../src/pages/Post";
+import About from "../src/pages/About";
+import Contact from "../src/pages/Contact";
 
-function App() {
+const App = () => {
   return (
-    <div className="mx-auto">
+    <Router>
       <NavBar />
       <Header />
-      <Main />
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/post" element={<Post />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
-}
+};
 
 export default App;
