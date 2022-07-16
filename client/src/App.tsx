@@ -8,7 +8,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="container sm:container md:mx-auto">
+    <div className="mx-auto">
       <NavBar />
       <Header />
       <Main />

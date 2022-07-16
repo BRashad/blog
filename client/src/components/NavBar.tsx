@@ -1,4 +1,5 @@
 import { useState } from "react";
+import AppRouter from "../AppRouter";
 
 export default function NavBar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -8,6 +9,7 @@ export default function NavBar() {
       <a href="/">
         <span>Rashad Bayram</span>
       </a>
+
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
           <div
@@ -39,30 +41,31 @@ export default function NavBar() {
             </div>
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/about">HOME</a>
+                <a href="/home">HOME</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/portfolio">BLOG</a>
+                <a href="http://localhost:3000/post">POST</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/contact">ABOUT</a>
+                <a href="/about">ABOUT</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
                 <a href="/contact">CONTACT</a>
               </li>
+              <AppRouter />
             </ul>
           </div>
         </section>
 
-        <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
+        <ul className="DESKhrefP-MENU hidden space-x-8 lg:flex">
           <li>
-            <a href="/about">HOME</a>
+            <a href="/home">HOME</a>
           </li>
           <li>
-            <a href="/portfolio">BLOG</a>
+            <a href="http://localhost:3000/post">POST</a>
           </li>
           <li>
-            <a href="/contact">ABOUT</a>
+            <a href="/about">ABOUT</a>
           </li>
           <li>
             <a href="/contact">CONTACT</a>
