@@ -31,7 +31,7 @@ const Posts = () => {
                 <span className="text-sm">14 days ago</span>
               </div>
               <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <a href="/post">How to quickly deploy a static website</a>
+                <a href="/posts/:id">How to quickly deploy a static website</a>
               </h2>
               <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
                 Static websites are now used to bootstrap lots of websites and
@@ -49,7 +49,7 @@ const Posts = () => {
                   <span className="font-medium dark:text-white">Jese Leos</span>
                 </div>
                 <a
-                  href="/post"
+                  href="/posts/:id"
                   className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
                 >
                   Read more
@@ -89,7 +89,7 @@ const Posts = () => {
                 <span className="text-sm">14 days ago</span>
               </div>
               <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <a href="/post">Our first project with React</a>
+                <a href="/posts/:id">Our first project with React</a>
               </h2>
               <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
                 Static websites are now used to bootstrap lots of websites and
@@ -109,7 +109,7 @@ const Posts = () => {
                   </span>
                 </div>
                 <a
-                  href="/post"
+                  href="/posts/:id"
                   className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
                 >
                   Read more
@@ -144,7 +144,7 @@ const Posts = () => {
                 <span className="text-sm">14 days ago</span>
               </div>
               <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <a href="/post">How to quickly deploy a static website</a>
+                <a href="/posts/:id">How to quickly deploy a static website</a>
               </h2>
               <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
                 Static websites are now used to bootstrap lots of websites and
@@ -162,7 +162,7 @@ const Posts = () => {
                   <span className="font-medium dark:text-white">Jese Leos</span>
                 </div>
                 <a
-                  href="/post"
+                  href="/posts/:id"
                   className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
                 >
                   Read more
@@ -202,7 +202,7 @@ const Posts = () => {
                 <span className="text-sm">14 days ago</span>
               </div>
               <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <a href="/post">Our first project with React</a>
+                <a href="/posts/:id">Our first project with React</a>
               </h2>
               <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
                 Static websites are now used to bootstrap lots of websites and
@@ -222,7 +222,7 @@ const Posts = () => {
                   </span>
                 </div>
                 <a
-                  href="/post"
+                  href="/posts/:id"
                   className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
                 >
                   Read more
@@ -257,7 +257,7 @@ const Posts = () => {
                 <span className="text-sm">14 days ago</span>
               </div>
               <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <a href="/post">How to quickly deploy a static website</a>
+                <a href="/posts/:id">How to quickly deploy a static website</a>
               </h2>
               <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
                 Static websites are now used to bootstrap lots of websites and
@@ -275,7 +275,7 @@ const Posts = () => {
                   <span className="font-medium dark:text-white">Jese Leos</span>
                 </div>
                 <a
-                  href="/post"
+                  href="/posts/:id"
                   className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
                 >
                   Read more
@@ -315,7 +315,7 @@ const Posts = () => {
                 <span className="text-sm">14 days ago</span>
               </div>
               <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <a href="/post">Our first project with React</a>
+                <a href="/posts/:id">Our first project with React</a>
               </h2>
               <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
                 Static websites are now used to bootstrap lots of websites and
@@ -335,7 +335,7 @@ const Posts = () => {
                   </span>
                 </div>
                 <a
-                  href="/post"
+                  href="/posts/:id"
                   className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
                 >
                   Read more

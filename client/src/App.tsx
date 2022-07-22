@@ -10,6 +10,7 @@ import Home from "../src/pages/Main";
 import About from "../src/pages/About";
 import Contact from "../src/pages/Contact";
 import Posts from "../src/pages/Posts";
+import Post from "../src/pages/Post";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/posts" element={<Posts />} />
+        <Route path="/posts/:id" element={<Post />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
