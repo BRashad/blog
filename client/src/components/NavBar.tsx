@@ -7,7 +7,7 @@ export default function NavBar() {
   return (
     <div className="flex items-center justify-around py-8 bg-emerald-300">
       <a href="/home">
-        <span>Rashad Bayram</span>
+        <span className="font-bold text-4xl">Rashad Bayram</span>
       </a>
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
@@ -38,15 +38,15 @@ export default function NavBar() {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
-            <ul className="flex flex-col items-center justify-between min-h-[250px]">
-              <li className="border-b border-gray-400 my-8 uppercase">
+            <ul className="flex flex-col items-center justify-between  min-h-[250px]">
+              <li className="border-b  border-gray-400 my-8 uppercase">
                 <Link to="/home" onClick={() => setIsNavOpen(false)}>
                   HOME
                 </Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <Link to="/post" onClick={() => setIsNavOpen(false)}>
-                  POST
+                <Link to="/posts" onClick={() => setIsNavOpen(false)}>
+                  POSTS
                 </Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
@@ -65,16 +65,24 @@ export default function NavBar() {
 
         <ul className="DESKhrefP-MENU hidden space-x-8 lg:flex">
           <li>
-            <Link to="/home">HOME</Link>
+            <Link className="font-bold" to="/home">
+              HOME
+            </Link>
           </li>
           <li>
-            <Link to="/post">POST</Link>
+            <Link className="font-bold" to="/posts">
+              POSTS
+            </Link>
           </li>
           <li>
-            <Link to="/about">ABOUT</Link>
+            <Link className="font-bold" to="/about">
+              ABOUT
+            </Link>
           </li>
           <li>
-            <Link to="/contact">CONTACT</Link>
+            <Link className="font-bold" to="/contact">
+              CONTACT
+            </Link>
           </li>
         </ul>
       </nav>

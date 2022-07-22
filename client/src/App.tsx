@@ -7,9 +7,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import Home from "../src/pages/Main";
-import Post from "../src/pages/Post";
 import About from "../src/pages/About";
 import Contact from "../src/pages/Contact";
+import Posts from "../src/pages/Posts";
 
 const App = () => {
   return (
@@ -18,7 +18,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/home" element={<Home />} />
-        <Route path="/post" element={<Post />} />
+        <Route path="/posts" element={<Posts />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
