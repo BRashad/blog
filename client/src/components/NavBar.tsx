@@ -5,8 +5,8 @@ export default function NavBar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-around py-8">
-      <a href="/">
+    <div className="flex items-center justify-around py-8 bg-emerald-300">
+      <a href="/home">
         <span>Rashad Bayram</span>
       </a>
       <nav>
@@ -40,16 +40,24 @@ export default function NavBar() {
             </div>
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
               <li className="border-b border-gray-400 my-8 uppercase">
-                <Link to="/home">HOME</Link>
+                <Link to="/home" onClick={() => setIsNavOpen(false)}>
+                  HOME
+                </Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <Link to="/post">POST</Link>
+                <Link to="/post" onClick={() => setIsNavOpen(false)}>
+                  POST
+                </Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <Link to="/about">ABOUT</Link>
+                <Link to="/about" onClick={() => setIsNavOpen(false)}>
+                  ABOUT
+                </Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <Link to="/contact">CONTACT</Link>
+                <Link to="/contact" onClick={() => setIsNavOpen(false)}>
+                  CONTACT
+                </Link>
               </li>
             </ul>
           </div>
