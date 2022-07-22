@@ -67,12 +67,12 @@ const Contact = () => {
             ></textarea>
           </div>
         </form>
-        <button
-          type="submit"
-          className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+        <a
+          href="/posts/:id"
+          className="inline-flex items-center mt-3 py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
-          Send message
-        </button>
+          Send Message
+        </a>
       </div>
     </section>
   );
