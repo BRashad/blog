@@ -3,22 +3,22 @@ class PostDataService {
   getAll() {
     return http.get("/posts");
   }
-  get(id) {
+  get(id: any) {
     return http.get(`/posts/${id}`);
   }
-  create(data) {
+  create(data: any) {
     return http.post("/posts", data);
   }
-  update(id, data) {
+  update(id: any, data: any) {
     return http.put(`/posts/${id}`, data);
   }
-  delete(id) {
+  delete(id: any) {
     return http.delete(`/posts/${id}`);
   }
   deleteAll() {
     return http.delete(`/posts`);
   }
-  findByTitle(title) {
+  findByTitle(title: any) {
     return http.get(`/posts?title=${title}`);
   }
 }
