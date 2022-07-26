@@ -2,10 +2,15 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
 const cors = require("cors");
-const PORT = 4000;
+
+let corsOptions = {
+  origin: "http://localhost:8081",
+};
+
+app.use(cors(corsOptions));
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors());
+
 app.use(bodyParser.json());
 
 const db = require("../server/models");
@@ -23,10 +28,13 @@ db.mongoose
   });
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.json({ message: "Welcome to myblog." });
 });
 
+require("./app/routes/post.routes")(app);
+
 // set port, listen for requests
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, function () {
   console.log("Server is running on Port: " + PORT);
 });
