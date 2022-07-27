@@ -6,7 +6,7 @@ export default function NavBar() {
 
   return (
     <div className="flex items-center justify-around py-8 bg-emerald-300">
-      <a href="/home">
+      <a href="https://rashadbayram.com">
         <span className="font-bold text-4xl">Rashad Bayram</span>
       </a>
       <nav>
@@ -39,14 +39,10 @@ export default function NavBar() {
               </svg>
             </div>
             <ul className="flex flex-col items-center justify-between  min-h-[250px]">
-              <li className="border-b  border-gray-400 my-8 uppercase">
-                <Link to="/home" onClick={() => setIsNavOpen(false)}>
-                  HOME
-                </Link>
-              </li>
+              <li className="border-b  border-gray-400 my-8 uppercase"></li>
               <li className="border-b border-gray-400 my-8 uppercase">
                 <Link to="/posts" onClick={() => setIsNavOpen(false)}>
-                  POSTS
+                  ARTICLES
                 </Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
@@ -65,13 +61,8 @@ export default function NavBar() {
 
         <ul className="DESKhrefP-MENU hidden space-x-8 lg:flex">
           <li>
-            <Link className="font-bold" to="/home">
-              HOME
-            </Link>
-          </li>
-          <li>
             <Link className="font-bold" to="/posts">
-              POSTS
+              ARTICLES
             </Link>
           </li>
           <li>

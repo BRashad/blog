@@ -4,7 +4,7 @@ import ReactImage from "../assets/react.jpg";
 const Post = () => {
   return (
     <div className="flex items-center flex-col">
-      <h1 className="mb-5 text-2xl font-semibold text-left">
+      <h1 className="my-8 mb-5 text-2xl font-semibold text-left">
         First test blog post
       </h1>
       <img className="w-2/4 mb-10" src={ReactImage} alt="testimage" />

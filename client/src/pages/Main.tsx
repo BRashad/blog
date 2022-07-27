@@ -5,7 +5,7 @@ import Recent from "../components/Recent";
 
 const Main = () => {
   return (
-    <div className="flex justify-center basis">
+    <div className="flex justify-center md:flex-wrap">
       <main className="basis-2/4 flex justify-center">
         <Recent />
       </main>
