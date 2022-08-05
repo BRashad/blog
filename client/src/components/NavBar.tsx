@@ -35,6 +35,7 @@ export default function NavBar(props: Props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+      <Link to="https://rashadbayram.com/">Rashad Bayram</Link>
       <Typography variant="h6" sx={{ my: 2 }}>
         Rashad Bayram
       </Typography>
