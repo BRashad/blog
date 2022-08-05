@@ -35,10 +35,11 @@ export default function NavBar(props: Props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Link to="https://rashadbayram.com/">Rashad Bayram</Link>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        Rashad Bayram
-      </Typography>
+      <a href="https://rashadbayram.com/">
+        <Typography variant="h6" sx={{ my: 2 }}>
+          Rashad Bayram
+        </Typography>
+      </a>
       <Divider />
       <List>
         <ListItem disablePadding sx={{ flexDirection: "column" }}>
@@ -84,13 +85,15 @@ export default function NavBar(props: Props) {
           >
             <MenuIcon />
           </IconButton>
+
           <Typography
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            Rashad Bayram
+            <a href="https://rashadbayram.com/">Rashad Bayram</a>
           </Typography>
+
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <Link to="/posts">
               <Button sx={{ color: "#fff" }}>ARTICLES</Button>
