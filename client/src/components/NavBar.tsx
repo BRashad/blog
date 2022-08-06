@@ -37,7 +37,7 @@ export default function NavBar(props: Props) {
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <a href="https://rashadbayram.com/">
         <Typography variant="h6" sx={{ my: 2 }}>
-          Rashad Bayram
+          Nila Marita
         </Typography>
       </a>
       <Divider />
@@ -91,7 +91,7 @@ export default function NavBar(props: Props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            <a href="https://rashadbayram.com/">Rashad Bayram</a>
+            <a href="https://rashadbayram.com/">Nila Marita</a>
           </Typography>
 
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
