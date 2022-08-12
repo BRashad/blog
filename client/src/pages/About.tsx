@@ -1,5 +1,5 @@
 import React from "react";
-import rashad from "../assets/profile_img.jpg";
+import nila from "../assets/nilamarita.jpeg";
 
 const About = () => {
   return (
@@ -18,7 +18,7 @@ const About = () => {
       </section>
       <section className="bg-white dark:bg-gray-900">
         <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-          <img className="w-full dark:hidden" src={rashad} alt="dashboard" />
+          <img className="w-full dark:hidden" src={nila} alt="dashboard" />
           <img
             className="w-full hidden dark:block"
             src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg"
@@ -29,12 +29,12 @@ const About = () => {
               Let's create effective communication business environment.
             </h2>
             <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+              We are living in extraordinary times of change, and communications
+              continues to play a very important role in ensuring that
+              organisations can connect effectively with their audiences. I look
+              forward to seeing another series of innovative campaigns that have
+              demonstrated measurable and meaningful impact on both businesses
+              as well as the communities that they serve.
             </p>
           </div>
         </div>

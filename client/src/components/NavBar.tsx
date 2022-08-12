@@ -35,7 +35,7 @@ export default function NavBar(props: Props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <a href="https://rashadbayram.com/">
+      <a href="https://nilamarita.com/">
         <Typography variant="h6" sx={{ my: 2 }}>
           Nila Marita
         </Typography>
@@ -91,7 +91,7 @@ export default function NavBar(props: Props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            <a href="https://rashadbayram.com/">Nila Marita</a>
+            <a href="https://nilamarita.com/">Nila Marita</a>
           </Typography>
 
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
