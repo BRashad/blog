@@ -44,7 +44,7 @@ const Posts = () => {
               <div className="flex justify-between items-center">
                 <div className="flex items-center space-x-4">
                   <img
-                    className="w-7 h-7 rounded-full"
+                    className="w-10 h-10 rounded-full"
                     src={nilaavatar}
                     alt="Nila Marita avatar"
                   />

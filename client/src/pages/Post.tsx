@@ -1,13 +1,12 @@
 import React from "react";
-import ReactImage from "../assets/react.jpg";
 
 const Post = () => {
   return (
     <div className="flex items-center flex-col">
-      <h1 className="mt-24 mb-16 mb-5 text-2xl font-semibold text-left">
+      <h1 className="mt-24 mb-16 text-2xl font-semibold text-left">
         First test blog post
       </h1>
-      <img className="w-2/4 mb-10" src={ReactImage} alt="testimage" />
+
       <div className="w-2/4">
         <p>
           The classic latin passage that just never gets old, enjoy as much (or
