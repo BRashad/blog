@@ -74,14 +74,17 @@ export default function NavBar(props: Props) {
 
   return (
     <Box sx={{ display: "flex" }}>
-      <AppBar component="nav">
+      <AppBar component="nav" sx={{ backgroundColor: "white", color: "#000" }}>
         <Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{
+              mr: 2,
+              display: { sm: "none" },
+            }}
           >
             <MenuIcon />
           </IconButton>
@@ -96,13 +99,19 @@ export default function NavBar(props: Props) {
 
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <Link to="/posts">
-              <Button sx={{ color: "#fff" }}>ARTICLES</Button>
+              <Button sx={{ backgroundColor: "white", color: "#000" }}>
+                ARTICLES
+              </Button>
             </Link>
             <Link to="/about">
-              <Button sx={{ color: "#fff" }}>ABOUT</Button>
+              <Button sx={{ backgroundColor: "white", color: "#000" }}>
+                ABOUT
+              </Button>
             </Link>
             <Link to="/contact">
-              <Button sx={{ color: "#fff" }}>CONTACT</Button>
+              <Button sx={{ backgroundColor: "white", color: "#000" }}>
+                CONTACT
+              </Button>
             </Link>
           </Box>
         </Toolbar>
